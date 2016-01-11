@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="WINDOWS-1251"?><osm>
+
+  <!-- Ячейки сектора 1 --><!--
+  <CellTable SectorID="sector.1">
+  <Cell id="S01-10-01" Width="0.80" Depth="1.00" Height="1.85" Column="10" Row="1" Level="1" Type="3"/>
+  <Cell id="S01-77-04" Width="0.80" Depth="1.00" Height="1.85" Column="77" Row="1" Level="4" Type="2"/>
+  <Cell id="S01-77-05" Width="0.80" Depth="1.00" Height="1.85" Column="77" Row="1" Level="5" Type="2"/>
+  <Cell id="S01-78-05" Width="0.80" Depth="1.00" Height="1.85" Column="78" Row="1" Level="5" Type="2"/>
+  </CellTable>
+  
+  --><!-- Центр сектора 1 --><!--
+  <node id="sector.Centre.1" lon="-64.80" lat="0.00"/>
+  <relation id="sector.1">
+    <tag k="type"  v="rack"/>
+    <tag k="angle" v="0.00"/>
+    <member type="node" ref="sector.Centre.1" role="rack_centre"/>
+  </relation>-->
+
+  
+  <!-- Контуры склада (ways) -->
+  
+  <!--way-1 -->
+  <node id="wh.point1.1" lon="-3.00" lat="3.00"/>
+  <node id="wh.point1.2" lon="2.00" lat="5.00"/>
+  <node id="wh.point1.3" lon="5.00" lat="1.00"/>
+  <node id="wh.point1.4" lon="2.00" lat="-3.00"/>
+  <node id="wh.point1.5" lon="-2.00" lat="-2.00"/>
+  <node id="wh.point1.6" lon="-3.00" lat="3.00"/>
+  <way id="wh.contur.1">
+    <tag k="Name" v="Периметр"/>
+    <nd ref="wh.point1.1"/>
+    <nd ref="wh.point1.2"/>
+    <nd ref="wh.point1.3"/>
+    <nd ref="wh.point1.4"/>
+    <nd ref="wh.point1.5"/>
+    <nd ref="wh.point1.6"/>
+  </way>
+
+    <!--way-2-->
+  <node id="wh.point2.1" lon="-10.00" lat="3.00"/>
+  <node id="wh.point2.2" lon="-8.00" lat="5.00"/>
+  <node id="wh.point2.3" lon="-6.00" lat="1.00"/>
+  <node id="wh.point2.4" lon="-9.00" lat="-1.00"/>
+  <node id="wh.point2.5" lon="-10.00" lat="3.00"/>
+  <way id="wh.contur.2">
+    <tag k="Name" v="Периметр"/>
+    <nd ref="wh.point2.1"/>
+    <nd ref="wh.point2.2"/>
+    <nd ref="wh.point2.3"/>
+    <nd ref="wh.point2.4"/>
+    <nd ref="wh.point2.5"/>
+  </way>
+
+  <!--hole-1-->
+  <node id="wh.point3.1" lon="-1.00" lat="2.00"/>
+  <node id="wh.point3.2" lon="2.00" lat="2.00"/>
+  <node id="wh.point3.3" lon="2.00" lat="0.00"/>
+  <node id="wh.point3.4" lon="-1.00" lat="-1.00"/>
+  <node id="wh.point3.5" lon="-1.00" lat="2.00"/>
+  <way id="wh.contur.3">
+    <tag k="Name" v="Периметр"/>
+    <nd ref="wh.point3.1"/>
+    <nd ref="wh.point3.2"/>
+    <nd ref="wh.point3.3"/>
+    <nd ref="wh.point3.4"/>
+    <nd ref="wh.point3.5"/>
+  </way>
+
+  <!--way-3 part-1 -->
+  <node id="wh.point4.1" lon="15.00" lat="0.00"/>
+  <node id="wh.point4.2" lon="15.00" lat="12.00"/>
+  <node id="wh.point4.3" lon="100.00" lat="12.00"/>
+  <node id="wh.point4.4" lon="100.00" lat="0.00"/>
+  <way id="wh.contur.4">
+    <tag k="Name" v="Периметр"/>
+    <nd ref="wh.point4.1"/>
+    <nd ref="wh.point4.2"/>
+    <nd ref="wh.point4.3"/>
+    <nd ref="wh.point4.4"/>
+  </way>
+
+  <!--way-3 part-2 -->
+  <node id="wh.point5.1" lon="100.00" lat="0.00"/>
+  <node id="wh.point5.2" lon="25.00" lat="-10.00"/>
+  <node id="wh.point5.3" lon="15.00" lat="0.00"/>
+  <way id="wh.contur.5">
+    <tag k="Name" v="Периметр"/>
+    <nd ref="wh.point5.1"/>
+    <nd ref="wh.point5.2"/>
+    <nd ref="wh.point5.3"/>
+  </way>
+
+  <!--hole-2 part-1-->
+  <node id="wh.point6.1" lon="8.00" lat="10.00"/>
+  <node id="wh.point6.2" lon="8.00" lat="8.00"/>
+  <node id="wh.point6.3" lon="10.00" lat="8.00"/>
+  <node id="wh.point6.4" lon="10.00" lat="10.00"/>
+  <node id="wh.point6.5" lon="12.00" lat="10.00"/>
+  <node id="wh.point6.6" lon="12.00" lat="5.00"/>
+  <way id="wh.contur.6">
+    <tag k="Name" v="Периметр"/>
+    <nd ref="wh.point6.1"/>
+    <nd ref="wh.point6.2"/>
+    <nd ref="wh.point6.3"/>
+    <nd ref="wh.point6.4"/>
+    <nd ref="wh.point6.5"/>
+    <nd ref="wh.point6.6"/>
+  </way>
+
+  <!--hole-2 part-2-->
+  <node id="wh.point7.1" lon="12.00" lat="5.00"/>
+  <node id="wh.point7.2" lon="6.00" lat="5.00"/>
+  <node id="wh.point7.3" lon="6.00" lat="10.00"/>
+  <node id="wh.point7.4" lon="8.00" lat="10.00"/>
+  <way id="wh.contur.7">
+    <tag k="Name" v="Периметр"/>
+    <nd ref="wh.point7.1"/>
+    <nd ref="wh.point7.2"/>
+    <nd ref="wh.point7.3"/>
+    <nd ref="wh.point7.4"/>
+  </way>
+
+  <!-- Сам склад (relation) -->
+
+  <relation id="wh">
+    <tag k="type" v="warehouse"/>
+
+    <member type="way" ref="wh.contur.1" role="outer"/>
+    <member type="way" ref="wh.contur.2" role="outer"/>
+    <member type="way" ref="wh.contur.3" role="inner"/>
+    <member type="way" ref="wh.contur.4" role="outer"/>
+    <member type="way" ref="wh.contur.5" role="outer"/>
+    <member type="way" ref="wh.contur.6" role="inner"/>
+    <member type="way" ref="wh.contur.7" role="inner"/>
+
+  </relation>
+
+  <!-- Ворота склада -->
+
+  <node id="wh.gate1.1" lon="-63.70" lat="41.00"/>
+  <node id="wh.gate1.2" lon="-58.50" lat="41.00"/>
+  <way id="wh.gate.1">
+    <nd ref="wh.gate1.1"/>
+    <nd ref="wh.gate1.2"/>
+  </way>
+
+  <relation id="gate.1">
+    <tag k="type" v="gate"/>
+    <tag k="Num" v="1"/>
+    <tag k="Name" v="Ворота 1"/>
+    <member type="way" ref="wh.gate.1" role="gate"/>
+  </relation>
+  
+</osm>

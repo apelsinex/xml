@@ -1,0 +1,6 @@
+<Config>
+	<!--<Server Path="file://C:\Users\Borokh\reWareHouse\Assets\Creation\xml"/>--> 
+	<!--<Server Path="file://test.xml"/>--> 
+  <Server Path="http://server.eme.ru:9550/3DVisualisation"/> 
+	<Warehouse Id="1"/>
+</Config>
